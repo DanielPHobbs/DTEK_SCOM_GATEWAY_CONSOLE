@@ -741,7 +741,9 @@ $listbox1_SelectedIndexChanged={
 $DCAGWFailover_Click={
 	
 $progressbaroverlay1.visible = $false
-$LogMessages += " Getting Getaway failover Servers "		
+$LogMessages += " Getting Getaway failover Servers "
+	
+	
 
 if ($Global:GWDCaSELECT){
 $STATUS.backcolor="LightGreen"		
@@ -1111,7 +1113,7 @@ $buttonSHOWGWFAILOVER_Click={
 ]]></Code>
   <Mode>1</Mode>
   <Assemblies>
-    <Assembly>System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
+    <Assembly>System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
     <Assembly>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
     <Assembly>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
     <Assembly>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
