@@ -1,0 +1,1169 @@
+﻿
+  <FileID>48538f5c-114d-43d3-b33d-0432f2e082e3</FileID>
+  <LastExport>131656735310839820</LastExport>
+  <FileVersion>1.2</FileVersion>
+  <Object type="System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="formSELECT" children="Controls">
+    <Property name="ClientSize">1333, 767</Property>
+    <Property name="Name">formSELECT</Property>
+    <Property name="Text">SELECT</Property>
+    <Event name="Load">formSELECT_Load</Event>
+    <Object type="SAPIENTypes.ProgressBarOverlay, PowerShell Studio, Version=3.1.35.0, Culture=neutral, PublicKeyToken=null" name="progressbaroverlay1" children="Controls">
+      <Property name="Location">781, 60</Property>
+      <Property name="Name">progressbaroverlay1</Property>
+      <Property name="Size">325, 23</Property>
+      <Property name="TabIndex">56</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="SETALLB" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1218, 644</Property>
+      <Property name="Name">SETALLB</Property>
+      <Property name="Size">62, 36</Property>
+      <Property name="TabIndex">55</Property>
+      <Property name="Text">SET ALL</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="SETALLA" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1218, 373</Property>
+      <Property name="Name">SETALLA</Property>
+      <Property name="Size">62, 36</Property>
+      <Property name="TabIndex">54</Property>
+      <Property name="Text">SET ALL</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelAGENTS" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">988, 130</Property>
+      <Property name="Name">labelAGENTS</Property>
+      <Property name="Size">129, 23</Property>
+      <Property name="TabIndex">53</Property>
+      <Property name="Text">AGENTS </Property>
+    </Object>
+    <Object type="System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="checkedlistbox6" children="Controls">
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="HorizontalScrollbar">True</Property>
+      <Property name="Location">949, 425</Property>
+      <Property name="Name">checkedlistbox6</Property>
+      <Property name="Size">168, 259</Property>
+      <Property name="TabIndex">52</Property>
+      <Event name="SelectedIndexChanged">checkedlistbox6_SelectedIndexChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="checkedlistbox5" children="Controls">
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="HorizontalScrollbar">True</Property>
+      <Property name="Location">949, 154</Property>
+      <Property name="Name">checkedlistbox5</Property>
+      <Property name="Size">168, 259</Property>
+      <Property name="TabIndex">51</Property>
+      <Event name="SelectedIndexChanged">checkedlistbox5_SelectedIndexChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSELECT4" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 549</Property>
+      <Property name="Name">buttonSELECT4</Property>
+      <Property name="Size">172, 23</Property>
+      <Property name="TabIndex">50</Property>
+      <Property name="Text">SELECT</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSELECT4_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSELECT3" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 549</Property>
+      <Property name="Name">buttonSELECT3</Property>
+      <Property name="Size">129, 23</Property>
+      <Property name="TabIndex">49</Property>
+      <Property name="Text">SELECT</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSELECT3_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSELECT2" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 275</Property>
+      <Property name="Name">buttonSELECT2</Property>
+      <Property name="Size">172, 23</Property>
+      <Property name="TabIndex">48</Property>
+      <Property name="Text">SELECT</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSELECT2_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSELECT1" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 275</Property>
+      <Property name="Name">buttonSELECT1</Property>
+      <Property name="Size">129, 23</Property>
+      <Property name="TabIndex">47</Property>
+      <Property name="Text">SELECT</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSELECT1_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox9" children="Controls">
+      <Property name="BackColor">0, 0, 192</Property>
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="ForeColor">Lime</Property>
+      <Property name="Location">427, 397</Property>
+      <Property name="Multiline">True</Property>
+      <Property name="Name">textbox9</Property>
+      <Property name="ReadOnly">True</Property>
+      <Property name="ScrollBars">Vertical</Property>
+      <Property name="Size">336, 254</Property>
+      <Property name="TabIndex">46</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox8" children="Controls">
+      <Property name="BackColor">0, 0, 192</Property>
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="ForeColor">Lime</Property>
+      <Property name="Location">427, 130</Property>
+      <Property name="Multiline">True</Property>
+      <Property name="Name">textbox8</Property>
+      <Property name="ReadOnly">True</Property>
+      <Property name="ScrollBars">Vertical</Property>
+      <Property name="Size">336, 256</Property>
+      <Property name="TabIndex">45</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="label5" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 575</Property>
+      <Property name="Name">label5</Property>
+      <Property name="Size">82, 12</Property>
+      <Property name="TabIndex">44</Property>
+      <Property name="Text">SELECTED</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="label4" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 575</Property>
+      <Property name="Name">label4</Property>
+      <Property name="Size">82, 12</Property>
+      <Property name="TabIndex">43</Property>
+      <Property name="Text">SELECTED</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="label3" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 304</Property>
+      <Property name="Name">label3</Property>
+      <Property name="Size">82, 12</Property>
+      <Property name="TabIndex">42</Property>
+      <Property name="Text">SELECTED</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="label2" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 304</Property>
+      <Property name="Name">label2</Property>
+      <Property name="Size">82, 12</Property>
+      <Property name="TabIndex">41</Property>
+      <Property name="Text">SELECTED</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="label1" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">25, 578</Property>
+      <Property name="Name">label1</Property>
+      <Property name="Size">82, 12</Property>
+      <Property name="TabIndex">40</Property>
+      <Property name="Text">SELECTED</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelSELECTED" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">25, 307</Property>
+      <Property name="Name">labelSELECTED</Property>
+      <Property name="Size">82, 12</Property>
+      <Property name="TabIndex">39</Property>
+      <Property name="Text">SELECTED</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelGATEWAYAndAGENTSTATU" children="Controls">
+      <Property name="Font">Tahoma, 9.75pt, style=Bold</Property>
+      <Property name="Location">493, 663</Property>
+      <Property name="Name">labelGATEWAYAndAGENTSTATU</Property>
+      <Property name="Size">249, 18</Property>
+      <Property name="TabIndex">38</Property>
+      <Property name="Text">GATEWAY and AGENT STATUS
+</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="STATUS" children="Controls">
+      <Property name="BackColor">Lime</Property>
+      <Property name="BorderStyle">FixedSingle</Property>
+      <Property name="Font">Arial Rounded MT Bold, 12pt, style=Bold</Property>
+      <Property name="Location">493, 684</Property>
+      <Property name="Name">STATUS</Property>
+      <Property name="Size">191, 48</Property>
+      <Property name="TabIndex">37</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox7" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 593</Property>
+      <Property name="Multiline">True</Property>
+      <Property name="Name">textbox7</Property>
+      <Property name="Size">172, 45</Property>
+      <Property name="TabIndex">36</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox6" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 593</Property>
+      <Property name="Multiline">True</Property>
+      <Property name="Name">textbox6</Property>
+      <Property name="Size">129, 45</Property>
+      <Property name="TabIndex">35</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox5" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 321</Property>
+      <Property name="Multiline">True</Property>
+      <Property name="Name">textbox5</Property>
+      <Property name="Size">172, 45</Property>
+      <Property name="TabIndex">34</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox4" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 321</Property>
+      <Property name="Multiline">True</Property>
+      <Property name="Name">textbox4</Property>
+      <Property name="Size">129, 45</Property>
+      <Property name="TabIndex">33</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox3" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">25, 595</Property>
+      <Property name="Name">textbox3</Property>
+      <Property name="Size">205, 21</Property>
+      <Property name="TabIndex">32</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox2" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">25, 322</Property>
+      <Property name="Name">textbox2</Property>
+      <Property name="Size">205, 21</Property>
+      <Property name="TabIndex">31</Property>
+    </Object>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textbox1" children="Controls">
+      <Property name="BackColor">0, 0, 192</Property>
+      <Property name="ForeColor">Lime</Property>
+      <Property name="Location">25, 660</Property>
+      <Property name="Multiline">True</Property>
+      <Property name="Name">textbox1</Property>
+      <Property name="ReadOnly">True</Property>
+      <Property name="ScrollBars">Both</Property>
+      <Property name="Size">377, 85</Property>
+      <Property name="TabIndex">30</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonEXITCONSOLE" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1106, 702</Property>
+      <Property name="Name">buttonEXITCONSOLE</Property>
+      <Property name="Size">199, 53</Property>
+      <Property name="TabIndex">29</Property>
+      <Property name="Text">EXIT CONSOLE</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonEXITCONSOLE_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSTARTGATEWAYSCAN" children="Controls">
+      <Property name="Font">Arial, 8.25pt, style=Bold</Property>
+      <Property name="Location">427, 43</Property>
+      <Property name="Name">buttonSTARTGATEWAYSCAN</Property>
+      <Property name="Size">336, 53</Property>
+      <Property name="TabIndex">28</Property>
+      <Property name="Text">START GATEWAY SCAN</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSTARTGATEWAYSCAN_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelSCRIPTOUTPUT" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">25, 645</Property>
+      <Property name="Name">labelSCRIPTOUTPUT</Property>
+      <Property name="Size">100, 12</Property>
+      <Property name="TabIndex">27</Property>
+      <Property name="Text">SCRIPT OUTPUT</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonset4" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 644</Property>
+      <Property name="Name">buttonset4</Property>
+      <Property name="Size">62, 36</Property>
+      <Property name="TabIndex">25</Property>
+      <Property name="Text">SET</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonset4_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="checkedlistbox4" children="Controls">
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="Location">1133, 425</Property>
+      <Property name="Name">checkedlistbox4</Property>
+      <Property name="Size">172, 109</Property>
+      <Property name="TabIndex">24</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSET2" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 373</Property>
+      <Property name="Name">buttonSET2</Property>
+      <Property name="Size">62, 36</Property>
+      <Property name="TabIndex">23</Property>
+      <Property name="Text">SET </Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSET2_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="checkedlistbox3" children="Controls">
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="Location">1133, 154</Property>
+      <Property name="Name">checkedlistbox3</Property>
+      <Property name="Size">172, 109</Property>
+      <Property name="TabIndex">22</Property>
+      <Event name="SelectedIndexChanged">checkedlistbox3_SelectedIndexChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelSETAGENTFAILOVER" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">1133, 128</Property>
+      <Property name="Name">labelSETAGENTFAILOVER</Property>
+      <Property name="Size">129, 23</Property>
+      <Property name="TabIndex">21</Property>
+      <Property name="Text">SET AGENT FAILOVER</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonCHECKAGENTFAILOVER" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">251, 540</Property>
+      <Property name="Name">buttonCHECKAGENTFAILOVER</Property>
+      <Property name="Size">151, 36</Property>
+      <Property name="TabIndex">20</Property>
+      <Property name="Text">CHECK AGENT FAILOVER</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="SHOWAGENTSB" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">251, 472</Property>
+      <Property name="Name">SHOWAGENTSB</Property>
+      <Property name="Size">151, 36</Property>
+      <Property name="TabIndex">19</Property>
+      <Property name="Text">SHOW AGENTS </Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">SHOWAGENTSB_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="DCBGWFailover" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">251, 402</Property>
+      <Property name="Name">DCBGWFailover</Property>
+      <Property name="Size">151, 36</Property>
+      <Property name="TabIndex">18</Property>
+      <Property name="Text">SHOW GW FAILOVER</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">DCBGWFailover_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelSETGWFAILOVER" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 128</Property>
+      <Property name="Name">labelSETGWFAILOVER</Property>
+      <Property name="Size">129, 23</Property>
+      <Property name="TabIndex">17</Property>
+      <Property name="Text">SET GW FAILOVER</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="SHOWAGENTSFAILOVER" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">251, 269</Property>
+      <Property name="Name">SHOWAGENTSFAILOVER</Property>
+      <Property name="Size">151, 36</Property>
+      <Property name="TabIndex">16</Property>
+      <Property name="Text">CHECK AGENT FAILOVER </Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelDTEKSCOMR22012GATEWA" children="Controls">
+      <Property name="Font">Arial, 18pt, style=Bold</Property>
+      <Property name="Location">153, 9</Property>
+      <Property name="Name">labelDTEKSCOMR22012GATEWA</Property>
+      <Property name="Size">732, 31</Property>
+      <Property name="TabIndex">15</Property>
+      <Property name="Text">DTEK SCOM R2 2012 GATEWAY MANAGEMENT TOOL V2.0.0</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSET3" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 644</Property>
+      <Property name="Name">buttonSET3</Property>
+      <Property name="Size">129, 36</Property>
+      <Property name="TabIndex">14</Property>
+      <Property name="Text">SET</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSET3_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="checkedlistbox2" children="Controls">
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="Location">792, 425</Property>
+      <Property name="Name">checkedlistbox2</Property>
+      <Property name="Size">129, 109</Property>
+      <Property name="TabIndex">13</Property>
+    </Object>
+    <Object type="System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="checkedlistbox1" children="Controls">
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="Location">792, 154</Property>
+      <Property name="Name">checkedlistbox1</Property>
+      <Property name="Size">129, 109</Property>
+      <Property name="TabIndex">10</Property>
+      <Event name="SelectedIndexChanged">checkedlistbox1_SelectedIndexChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSET1" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">792, 373</Property>
+      <Property name="Name">buttonSET1</Property>
+      <Property name="Size">129, 36</Property>
+      <Property name="TabIndex">9</Property>
+      <Property name="Text">SET</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSET1_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="SHOWAGENTSA" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">251, 201</Property>
+      <Property name="Name">SHOWAGENTSA</Property>
+      <Property name="Size">151, 36</Property>
+      <Property name="TabIndex">8</Property>
+      <Property name="Text">SHOW AGENTS </Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">SHOWAGENTSA_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="DCAGWFailover" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">251, 131</Property>
+      <Property name="Name">DCAGWFailover</Property>
+      <Property name="Size">151, 36</Property>
+      <Property name="TabIndex">7</Property>
+      <Property name="Text">SHOW GW FAILOVER</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">DCAGWFailover_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelDCBGATEWAYS" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">69, 376</Property>
+      <Property name="Name">labelDCBGATEWAYS</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="TabIndex">6</Property>
+      <Property name="Text">DCB GATEWAYS</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelDCAGATEWAYS" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="Location">69, 112</Property>
+      <Property name="Name">labelDCAGATEWAYS</Property>
+      <Property name="Size">100, 16</Property>
+      <Property name="TabIndex">5</Property>
+      <Property name="Text">DCA GATEWAYS</Property>
+    </Object>
+    <Object type="System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="listbox2" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="Location">25, 131</Property>
+      <Property name="Name">listbox2</Property>
+      <Property name="Size">205, 173</Property>
+      <Property name="TabIndex">2</Property>
+      <Event name="SelectedIndexChanged">listbox2_SelectedIndexChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="listbox1" children="Controls">
+      <Property name="Font">Tahoma, 8.25pt, style=Bold</Property>
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="Location">25, 402</Property>
+      <Property name="Name">listbox1</Property>
+      <Property name="Size">205, 173</Property>
+      <Property name="TabIndex">1</Property>
+      <Event name="SelectedIndexChanged">listbox1_SelectedIndexChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="picturebox1" children="Controls">
+      <Property name="Image">
+        <Binary>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</Binary>
+      </Property>
+      <Property name="Location">12, 6</Property>
+      <Property name="Name">picturebox1</Property>
+      <Property name="Size">135, 103</Property>
+      <Property name="TabIndex">0</Property>
+      <Property name="TabStop">False</Property>
+    </Object>
+  </Object>
+  <Code><![CDATA[
+
+function OnApplicationLoad {
+	return $true #return true for success or false for failure
+}
+
+
+
+#region Control Helper Functions
+function Load-ComboBox 
+{
+	Param (
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		[System.Windows.Forms.ComboBox]$ComboBox,
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		$Items,
+	    [Parameter(Mandatory=$false)]
+		[string]$DisplayMember,
+		[switch]$Append
+	)
+	
+	if(-not $Append)
+	{
+		$ComboBox.Items.Clear()	
+	}
+	
+	if($Items -is [Object[]])
+	{
+		$ComboBox.Items.AddRange($Items)
+	}
+	elseif ($Items -is [Array])
+	{
+		$ComboBox.BeginUpdate()
+		foreach($obj in $Items)
+		{
+			$ComboBox.Items.Add($obj)	
+		}
+		$ComboBox.EndUpdate()
+	}
+	else
+	{
+		$ComboBox.Items.Add($Items)	
+	}
+
+	$ComboBox.DisplayMember = $DisplayMember	
+}
+
+function Load-ListBox 
+{
+	Param (
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		[System.Windows.Forms.ListBox]$ListBox,
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		$Items,
+	    [Parameter(Mandatory=$false)]
+		[string]$DisplayMember,
+		[switch]$Append
+	)
+	
+	if(-not $Append)
+	{
+		$listBox.Items.Clear()	
+	}
+	
+	if($Items -is [System.Windows.Forms.ListBox+ObjectCollection])
+	{
+		$listBox.Items.AddRange($Items)
+	}
+	elseif ($Items -is [Array])
+	{
+		$listBox.BeginUpdate()
+		foreach($obj in $Items)
+		{
+			$listBox.Items.Add($obj)
+		}
+		$listBox.EndUpdate()
+	}
+	else
+	{
+		$listBox.Items.Add($Items)	
+	}
+
+	$listBox.DisplayMember = $DisplayMember	
+}
+
+function OnApplicationExit {
+	$script:ExitCode = 0 #Set the exit code for the Packager
+}
+
+$formSELECT_Load={
+	
+#######################################################################
+########################  START  ######################################
+#######################################################################
+	
+#Set-StrictMode -Version 1.0
+	
+############# INIT ENVIROMENT ##########################
+$buttonSET2.enabled=$false
+$SHOWAGENTSB.enabled=$false
+$buttonCHECKAGENTFAILOVER.enabled=$false
+$buttonSET3.enabled=$false
+$buttonset4.enabled=$false
+$SHOWAGENTSFAILOVER.enabled=$false
+$buttonSET1.enabled=$false
+$SHOWAGENTSA.enabled=$false
+$DCAGWFailover.enabled=$false	
+$DCBGWFailover.enabled=$false
+$buttonSELECT1.Enabled=$false
+$buttonSELECT2.Enabled=$false	
+$buttonSELECT3.Enabled=$false
+$buttonSELECT4.Enabled=$false
+$SETALLA.Enabled=$false
+$SETALLB.Enabled=$false	
+	
+$progressbaroverlay1.visible = $false		
+	
+$Global:NewLine = "`r`n"
+
+$Global:SET1Click=0
+	
+clear
+
+######### must add this for system assemblies ##############
+Add-Type -AssemblyName System.Data
+######### Connect to SCOM ##################################
+
+
+## AUTOSTART-END ##	
+}	
+
+$buttonSTARTGATEWAYSCAN_Click={
+$formselect.Refresh
+$buttonSTARTGATEWAYSCAN.backcolor = "red"
+	
+$progressbaroverlay1.visible = $true
+$progressbaroverlay1.Value=0
+	
+	####### INIT Enviroment ####### 	
+	
+$textbox1.Text=""
+$listbox1.Text=""
+$listbox2.Text=""
+[string]$LogMessages=""
+$LogMessages += '--CONNECTING to MG' 
+$textbox1.Text = $LogMessages		
+
+try{
+	
+$ManagementServers=""
+	
+$MS1 = "DTEKSC2012R2-m1.dtek.com"
+$MS2 = "DTEKSC2012R2-m2.dtek.com"
+$MS3 = "DTEKSC2012R2-m3.dtek.com"
+	
+Import-Module OperationsManager
+New-SCOMManagementGroupConnection –ComputerName $MS1
+$LogMessages +="---connected to $MS1"	
+}
+
+catch{
+$LogMessages += "--- ERROR Unable to Connect to server $MS1 connecting to $MS2 "
+
+Try{	
+Import-Module OperationsManager
+New-SCOMManagementGroupConnection –ComputerName $MS2
+$LogMessages +="---connected to $MS2"		
+	}
+catch {
+$LogMessages += "--- ERROR Unable to Connect to server $MS2 connecting to $MS3 "		
+try{
+Import-Module OperationsManager
+New-SCOMManagementGroupConnection –ComputerName $MS3
+$LogMessages +="---connected to $MS3"
+		}
+		catch{
+$LogMessages += "--- ERROR Unable to Connect to any SCOM management server "		
+		}
+		}           
+}	
+
+$textbox1.Text = $LogMessages		
+
+######## GET MANAGEMENT SERVERS and GATEWAYS ##############
+
+Try{
+$ManagementServers = Get-SCOMManagementServer | where {$_.IsGateway -eq $false} | select name , computername
+
+$GWS=$GWS.name		
+$LogMessages += " ---retrieved Management server and Gateway information successfully "	 
+}
+catch {
+$LogMessages += " ---ERROR in retrieving Management and Gateway server information "		
+}
+
+$GW=@()
+
+$GW = Get-SCOMManagementServer | where {$_.IsGateway -eq $true} | select computername , name
+
+###### LOAD SELECTION and LISTBOXES ########
+	
+foreach ($GWDN in $GW){
+Start-Sleep -Milliseconds 3000		
+$progressbaroverlay1.Value +=10
+if ($GWDN.computername -like "???2*"){
+
+Load-ListBox $listbox2  $gwDN.name 	-append	
+Load-ListBox $checkedlistbox3  $gwDN.name 	-append				
+}
+
+if ($GWDN.computername -like "???5*"){
+Load-ListBox $listbox1  $gwDN.name 	-append	
+Load-ListBox $checkedlistbox4  $gwDN.name 	-append				
+}
+
+}
+	
+foreach ($MS in $ManagementServers){
+		
+	If ($MS.computername -Notlike 'PDC2SCM04?' -and $MS.computername -ne 'PDC2SCM018' -and $MS.computername -ne 'PDC2SCM019'-and $MS.computername -ne 'PDC2SCM010' ){
+	Load-ListBox $checkedlistbox1  $MS.computername 	-append		
+	Load-ListBox $checkedlistbox2  $MS.computername 	-append	
+		}		
+	}
+		
+$buttonSTARTGATEWAYSCAN.backcolor = "lightgreen"
+$textbox1.Text = $LogMessages	
+	
+$SHOWAGENTSB.enabled=$true
+$buttonCHECKAGENTFAILOVER.enabled=$true
+$SHOWAGENTSFAILOVER.enabled=$true
+$SHOWAGENTSA.enabled=$true
+$DCAGWFailover.enabled=$true
+$DCBGWFailover.enabled=$true
+		
+$SHOWAGENTSB.BackColor="lightblue"
+$buttonCHECKAGENTFAILOVER.BackColor="lightblue"
+$SHOWAGENTSFAILOVER.BackColor="lightblue"
+$SHOWAGENTSA.BackColor="lightblue"
+$DCAGWFailover.BackColor="lightblue"		
+$DCBGWFailover.BackColor="lightblue"
+
+$progressbaroverlay1.Value =100
+		
+}
+	
+###################################################################################	
+################################### END MAIN SCRIPT ###############################
+###################################################################################
+	
+#endregion
+
+$listbox2_SelectedIndexChanged={
+	$textbox2.Text = $listbox2.SelectedItem
+	$Global:GWDCaSELECT=$textbox2.Text
+	$textbox2.backcolor="Lightgreen"
+}
+
+$listbox1_SelectedIndexChanged={
+	$textbox3.Text = $listbox1.SelectedItem
+	$Global:GWDCbSELECT=$textbox3.Text
+	$textbox3.backcolor="Lightgreen"	
+}
+
+################### GTE DCA FAILOVER BUTTON #######################
+$DCAGWFailover_Click={
+	
+$progressbaroverlay1.visible = $false
+$LogMessages += " Getting Getaway failover Servers "
+	
+	
+
+if ($Global:GWDCaSELECT){
+$STATUS.backcolor="LightGreen"		
+$DCAGWFailover.backcolor = "red"
+$textbox8.Text = "Getting Failover MS for --  $Global:GWDCaSELECT"	+ $global:NewLine
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCaSELECT} 
+$GWA | foreach-object { 
+
+$Primary=$_.getPrimaryManagementServer() | select Name 
+
+If (!$Primary){
+$textbox8.ForeColor="RED"
+$textbox8.AppendText("ERROR -- NO PRIMARY FAILOVER SERVER" + $global:NewLine + $global:NewLine )			
+$STATUS.backcolor="red"	
+			
+		}Else{
+$textbox8.AppendText("Primary Server = $Primary" + $global:NewLine + $global:NewLine)
+		}				
+$failover=$_.getFailoverManagementServers() | select Name
+			
+If (!$failover){
+$textbox8.ForeColor="RED"
+$textbox8.AppendText("ERROR -- NO SECONDARY FAILOVER SERVER" + $global:NewLine)			
+$STATUS.backcolor="red"
+			
+		}else{
+$textbox8.AppendText("Failover Server = $failover" + $global:NewLine)	
+		}	
+						
+}
+$textbox1.Text = $LogMessages
+$buttonSELECT1.Enabled=$true
+$buttonSELECT1.BackColor="lightblue"		
+$DCAGWFailover.backcolor = "LightGreen"	
+	}
+
+else{	
+$textbox8.Text =	"ERROR NO GATEWAY SELECTED "				
+$textbox1.Text = $LogMessages
+$DCAGWFailover.backcolor = "LightGreen"
+	}	
+
+}
+
+################### GTE DCB FAILOVER BUTTON #######################
+
+$DCBGWFailover_Click={
+$progressbaroverlay1.visible = $false
+	
+$STATUS.backcolor="LightGreen"	
+$LogMessages += " Getting Getaway failover Servers"		
+	
+if ($Global:GWDCbSELECT){
+
+$DCBGWFailover.backcolor = "red"
+$textbox9.Text = "Getting Failover MS for --  $Global:GWDCbSELECT "	+ $global:NewLine
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCbSELECT} 
+$GWA | foreach-object { 
+
+$Primary=$_.getPrimaryManagementServer() | select Name 
+
+If (!$Primary){
+$textbox9.ForeColor="RED"
+$textbox9.AppendText("ERROR -- NO PRIMARY FAILOVER SERVER "	+ $global:NewLine + $global:NewLine )		
+$STATUS.backcolor="red"				
+		}Else{
+$textbox9.appendText("Primary Server = $Primary" + $global:NewLine + $global:NewLine)
+		}				
+$failover=$_.getFailoverManagementServers() | select Name
+			
+If (!$failover){
+$textbox9.ForeColor="RED"
+$textbox9.appendText("ERROR -- NO SECONDARY FAILOVER SERVER " + $global:NewLine)		
+$STATUS.backcolor="red"				
+		}else{
+$textbox9.appendText("Failover Server = $failover"	+ $global:NewLine)
+		}	
+}
+$buttonSELECT3.Enabled=$true
+$buttonSELECT3.BackColor="lightblue"
+$textbox1.Text = $LogMessages		
+$DCBGWFailover.backcolor = "LightGreen"	
+				
+		
+	}
+	Else{	
+$textbox9.Text =	"ERROR NO GATEWAY SELECTED "				
+$textbox1.Text = $LogMessages
+$DCBGWFailover.backcolor = "LightGreen"
+	}
+		
+}
+
+$buttonEXITCONSOLE_Click={$formSELECT.Close()}
+
+$checkedlistbox3_SelectedIndexChanged={}
+
+$checkedlistbox1_SelectedIndexChanged={}
+
+#### SELECT 1 #######
+$buttonSELECT1_Click={
+	
+	$Global:checked1=$checkedlistbox1.Items | ?{$checkedlistbox1.CheckedItems -contains $_}
+	
+	#### add a two only filter ####
+	If ($checkedlistbox1.CheckedItems.Count -le 1 -OR  $checkedlistbox1.CheckedItems.Count -gt 2){
+		$buttonSELECT1.BackColor="RED"
+		$textbox8.ForeColor="RED"
+		$buttonSET1.Enabled=$false
+		$textbox8.Text="2 SELECTIONS REQUIRED" + $global:NewLine
+		$textbox8.AppendText("AMEND SELECTION TO CONTINUE")
+	}
+	else{
+	$Global:PRIM1=$checkedlistbox1.checkedItems[0]
+	$Global:FAIL1=$checkedlistbox1.checkedItems[1]
+	$buttonSELECT1.backColor="lightblue"	
+	$textbox4.Text = $Global:checked1
+	$buttonSET1.Enabled=$true
+	$buttonSET1.BackColor="lightblue"
+	$textbox4.backcolor = "LightGreen"
+	$textbox8.foreColor="lime"	
+	$textbox8.Text=$Global:PRIM1 + $global:NewLine + $Global:FAIL1 + $global:NewLine + "SELECTED SUCCESSFULLY"		
+	}
+}
+#### SELECT 2 #######
+$buttonSELECT2_Click={
+	$checked2=$checkedlistbox3.Items | ?{$checkedlistbox3.CheckedItems -contains $_}
+	$textbox5.Text = $checked2
+	$buttonSET2.Enabled=$true
+	$buttonSET2.BackColor="lightblue"
+	$textbox5.backcolor = "LightGreen"
+	}
+
+#### SELECT 3 #######
+$buttonSELECT3_Click={
+	$checked3=$checkedlistbox2.Items | ?{$checkedlistbox2.CheckedItems -contains $_}
+
+	$Global:PRIM2=$checkedlistbox2.Items[0]
+	$Global:FAIL2=$checkedlistbox2.Items[1]
+	
+	#### add a two only filter ####
+	If ($checkedlistbox2.CheckedItems.Count -le 1 -OR  $checkedlistbox2.CheckedItems.Count -gt 2){
+		$buttonSELECT3.BackColor="RED"
+		$textbox9.ForeColor="RED"
+		$buttonSET3.Enabled=$false
+		$textbox9.Text="2 SELECTIONS REQUIRED" + $global:NewLine
+		$textbox9.AppendText("AMEND SELECTION TO CONTINUE")
+	}
+	else{
+	$Global:PRIM2=$checkedlistbox2.checkedItems[0]
+	$Global:FAIL2=$checkedlistbox2.checkedItems[1]
+	$buttonSELECT3.backColor="lightblue"	
+	$textbox6.Text = $checked3
+	$buttonSET3.Enabled=$true
+	$buttonSET3.BackColor="lightblue"
+	$textbox6.backcolor = "LightGreen"
+	$textbox9.foreColor="lime"	
+	$textbox9.Text=$Global:PRIM2 + $global:NewLine + $Global:FAIL2 + $global:NewLine + "SELECTED SUCCESSFULLY"		
+	}
+	}
+	
+#### SELECT 4 #######
+$buttonSELECT4_Click={
+	$checked4=$checkedlistbox4.Items | ?{$checkedlistbox4.CheckedItems -contains $_}
+	$textbox7.Text = $checked4
+	$buttonSET4.Enabled=$true
+	$buttonSET4.BackColor="lightblue"
+	$textbox7.backcolor = "LightGreen"
+	}
+	
+#### SET 1 #######
+$buttonSET1_Click={	
+$Global:SET1Click++
+$textbox8.ForeColor="LIME"
+$textbox8.Text = "YOU HAVE SELECTED PRIMARY and FAILOVER for $Global:GWDCaSELECT" + $Global:NewLine
+$textbox8.AppendText("PRIMARY To $Global:PRIM1" + $Global:NewLine)
+$textbox8.AppendText("FAILOVER To $Global:FAIL1" + $Global:NewLine + $Global:NewLine) 
+
+
+
+$textbox8.AppendText("!!!ARE YOU SURE!!!"  + $global:NewLine + $Global:NewLine)
+$textbox8.AppendText("PRESS SET AGAIN to COMMIT"  + $global:NewLine + $Global:NewLine)	
+$textbox8.AppendText("-----------------------------------------------"  + $global:NewLine)
+	
+If ($Global:SET1Click -eq 2){
+$textbox8.AppendText("SETTING PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox8.AppendText("-----------------------------------------------"  + $global:NewLine)	
+		
+#### SET PRIMARY and FAILOVER ####	
+ 	
+<#
+Try{
+$primaryMS = Get-SCOMManagementServer | where {$_.Name –eq $Global:PRIM1} 
+$failoverMS = Get-SCOMManagementServer | where {$_.Name –eq $Global:FAIL1} 
+$gatewayMS = Get-SCOMManagementServer | where {$_.Name –eq $Global:GWDCaSELECT} 
+Set-SCOMParentManagementServer -GatewayServer: $gatewayMS -PrimaryServer: $primaryMS 
+Set-SCOMParentManagementServer -GatewayServer: $gatewayMS -FailoverServer: $failoverMS		
+		}
+		Catch{###### INSERT CATCH CODE in Here ######}
+#>
+		
+$textbox8.AppendText("SET PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)	
+	
+$textbox8.AppendText("-----------------------------------------------"  + $global:NewLine + $global:NewLine)
+### VERIFY PRIM and FAILOVER ####
+$textbox8.AppendText("VERIFYING PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)			
+$textbox8.AppendText("-----------------------------------------------"  + $global:NewLine)	
+
+
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCaSELECT} 
+$GWA | foreach-object { 
+$Primary=$_.getPrimaryManagementServer() | select Name 			
+$failover=$_.getFailoverManagementServers() | select Name	
+	
+### check that these are correct ###
+If ( $Primary -eq $Global:PRIM1 -and $failover -eq $Global:FAIL1){
+			
+$textbox8.AppendText("SUCCESSFULLY VERIFIED PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)	
+
+$textbox8.AppendText("PRIMARY:---" + $Primary + $global:NewLine)
+$textbox8.AppendText("FAILOVER:---" + $failover+ $global:NewLine)				
+		}			
+else {
+$textbox8.ForeColor="RED"			
+$textbox8.AppendText("VERIFICATION FAILED FOR PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)
+
+$textbox8.AppendText("PRIMARY:---" + $Primary + $global:NewLine)
+$textbox8.AppendText("FAILOVER:---" + $failover+ $global:NewLine)				
+				
+		}	
+}
+						
+}	
+
+### Set status and reset buttons ###				
+}
+
+#### SET 2 #######
+$buttonSET2_Click={}
+
+#### SET 3 #######
+$buttonSET3_Click={
+	
+$Global:SET3Click++
+$textbox9.ForeColor="LIME"
+$textbox9.Text = "YOU HAVE SELECTED PRIMARY and FAILOVER for $Global:GWDCbSELECT" + $Global:NewLine
+$textbox9.AppendText("PRIMARY To $Global:PRIM2" + $Global:NewLine)
+$textbox9.AppendText("FAILOVER To $Global:FAIL2" + $Global:NewLine + $Global:NewLine) 
+
+$textbox9.AppendText("!!!ARE YOU SURE!!!"  + $global:NewLine + $Global:NewLine)
+$textbox9.AppendText("PRESS SET AGAIN to COMMIT"  + $global:NewLine + $Global:NewLine)	
+$textbox9.AppendText("-----------------------------------------------"  + $global:NewLine)
+	
+If ($Global:SET3Click -eq 2){
+$textbox9.AppendText("SETTING PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox9.AppendText("-----------------------------------------------"  + $global:NewLine)	
+		
+#### SET PRIMARY and FAILOVER ####	
+ 	
+<#
+Try{
+$primaryMS1 = Get-SCOMManagementServer | where {$_.Name –eq $Global:PRIM2} 
+$failoverMS1 = Get-SCOMManagementServer | where {$_.Name –eq $Global:FAIL2} 
+$gatewayMS1 = Get-SCOMManagementServer | where {$_.Name –eq $Global:GWDCbSELECT} 
+Set-SCOMParentManagementServer -GatewayServer: $gatewayMS1 -PrimaryServer: $primaryMS1 
+Set-SCOMParentManagementServer -GatewayServer: $gatewayMS1 -FailoverServer: $failoverMS1		
+		}
+		Catch{###### INSERT CATCH CODE in Here ######}
+#>
+		
+$textbox9.AppendText("SET PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)	
+	
+$textbox9.AppendText("-----------------------------------------------"  + $global:NewLine + $global:NewLine)
+### VERIFY PRIM and FAILOVER ####
+$textbox9.AppendText("VERIFYING PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)			
+$textbox9.AppendText("-----------------------------------------------"  + $global:NewLine)	
+
+
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCbSELECT} 
+$GWA | foreach-object { 
+$Primary1=$_.getPrimaryManagementServer() | select Name 			
+$failover1=$_.getFailoverManagementServers() | select Name	
+	
+### check that these are correct ###
+If ( $Primary1 -eq $Global:PRIM1 -and $failover -eq $Global:FAIL1){
+			
+$textbox9.AppendText("SUCCESSFULLY VERIFIED PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)	
+
+$textbox9.AppendText("PRIMARY:---" + $Primary1 + $global:NewLine)
+$textbox9.AppendText("FAILOVER:---" + $failover1 + $global:NewLine)				
+		}			
+else {
+$textbox9.ForeColor="RED"			
+$textbox9.AppendText("VERIFICATION FAILED FOR PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)
+
+$textbox9.AppendText("PRIMARY:---" + $Primary1 + $global:NewLine)
+$textbox9.AppendText("FAILOVER:---" + $failover1 + $global:NewLine)				
+				
+		}	
+}
+						
+}	
+
+### Set status and reset buttons ###
+	
+	}
+
+#### SET 4 #######
+$buttonset4_Click={}
+
+################################# SHOW AGENTS A ##################################
+$SHOWAGENTSA_Click={
+	$textbox8.ForeColor="LIME"
+	$checkedlistbox5.Items.Clear()
+	$agents1=@()
+	$SHOWAGENTSA.BackColor="RED"
+	$agents1=(get-SCOMManagementServer -Name $GWDCaSELECT).GetAgentManagedComputers() | select name, computername
+	$textbox8.text="Agents On Selected Gateway" + $global:NewLine
+	
+	If ($agents1) {
+	foreach ($agent1 in $agents1) {
+	$textbox8.Appendtext($agent1.name + $global:NewLine)
+	$SHOWAGENTSA.BackColor="LightGreen"
+	$buttonSELECT2.Enabled=$true
+			
+	Load-ListBox $checkedlistbox5  $agent1.computername  -append	
+	}	
+	}else{
+	$textbox8.text="No Agents On Selected Gateway"
+	$SHOWAGENTSA.BackColor="LightGreen"	
+	}
+		
+}
+
+################################# SHOW AGENTS B ##################################
+$SHOWAGENTSB_Click={
+	$textbox9.ForeColor="LIME"
+	$checkedlistbox6.Items.Clear()
+	$agents2=@()
+	$SHOWAGENTSB.BackColor="RED"
+	$agents2=(get-SCOMManagementServer -Name $GWDCBSELECT).GetAgentManagedComputers() | select name, computername
+	$textbox9.text="Agents On Selected Gateway" + $global:NewLine
+	
+	If ($agents2) {
+	foreach ($agent2 in $agents2) {
+	$textbox9.Appendtext($agent2.name + $global:NewLine)
+	$SHOWAGENTSB.BackColor="LightGreen"
+	$buttonSELECT4.Enabled=$true
+			
+	Load-ListBox $checkedlistbox6  $agent2.computername  -append			
+	}	
+	}else{
+	$textbox9.text="No Agents On Selected Gateway"
+	$SHOWAGENTSB.BackColor="LightGreen"	
+	}
+	
+}
+
+$checkedlistbox5_SelectedIndexChanged={}
+
+$checkedlistbox6_SelectedIndexChanged={}
+
+$buttonSHOWGWFAILOVER_Click={
+	#TODO: Place custom script here
+	
+}
+]]></Code>
+  <Mode>0</Mode>
+  <Assemblies>
+    <Assembly>System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
+    <Assembly>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+  </Assemblies>
+  <Packager>
+    <General>
+      <PackageName>
+      </PackageName>
+      <PackageIcon>
+      </PackageIcon>
+      <ManifestCreation>1</ManifestCreation>
+      <CustomManifest>
+      </CustomManifest>
+      <Platform>-1</Platform>
+      <RunSTA>0</RunSTA>
+      <PowerShellVersion>3</PowerShellVersion>
+    </General>
+    <Security>
+      <Username>
+      </Username>
+      <Password>
+      </Password>
+      <SignPackage>False</SignPackage>
+      <Certificate>
+      </Certificate>
+      <CertificatePassword>
+      </CertificatePassword>
+      <RunAs>0</RunAs>
+    </Security>
+    <Version>
+      <FileVersion>1.0.0.0</FileVersion>
+      <ProductVersion>1.0.0.0</ProductVersion>
+      <ProductName>
+      </ProductName>
+      <Description>
+      </Description>
+      <Company>DTKEITINNOVATIONS</Company>
+      <Copyright>
+      </Copyright>
+      <InternalName>
+      </InternalName>
+      <OriginalFileName>
+      </OriginalFileName>
+      <Comment>
+      </Comment>
+    </Version>
+  </Packager>
