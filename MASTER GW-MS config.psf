@@ -1326,10 +1326,10 @@ $buttonSELECT4.Enabled=$false
 $SETALLA.Enabled=$false
 $SETALLB.Enabled=$false	
 	
-$progressbaroverlay1.visible = $false		
+$progressbaroverlay1.visible = $false
 	
+	$ErrorActionPreference = 'Stop'
 $Global:NewLine = "`r`n"
-
 $Global:SET1Click=0
 	
 clear
@@ -1355,13 +1355,39 @@ $textbox1.Text=""
 $listbox1.Text=""
 $listbox2.Text=""
 [string]$LogMessages=""
-$LogMessages += '--CONNECTING to MG' 
-$textbox1.Text = $LogMessages		
-
+$LogMessages += '--CONNECTING to MG'+ $Global:NewLine
+$textbox1.Text = $LogMessages
+	
+	
+##// ADD LOGGING FUNCTION from templates	
+	
+		# Check if the OperationsManager Module is loaded
+		if (-not (Get-Module | Where-Object { $_.Name -eq "OperationsManager" }))
+		{
+			$LogMessages += "The Operations Manager Module was not found...importing the Operations Manager Module" + $Global:NewLine
+		
+		Try
+		{
+			Import-module OperationsManager -ErrorAction stop
+		}
+		catch
+		{
+			$ErrorMessage = $_.Exception.Message
+			$LogMessages += $ErrorMessage
+			$LogMessages += "Exiting "
+			exit
+		}
+	}
+	else
+	{
+		$LogMessages += "The Operations Manager Module is loaded" + $Global:NewLine
+	}
+	
+	
+	
 try{
 		
-#// insert SPN discovery function here
-		
+#// insert SPN discovery function here		
 #// 
 		
 $ManagementServers=""
@@ -1370,11 +1396,8 @@ $ManagementServers=""
 $MS1 = "DTEKSC2016-m1.dtek.com"
 $MS2 = "DTEKSC2016-m2.dtek.com"
 $MS3 = "DTEKSC2016-m3.dtek.com"
-		
-		
-	
-Import-Module OperationsManager
-New-SCOMManagementGroupConnection –ComputerName $MS1
+				
+		New-SCOMManagementGroupConnection –ComputerName $MS1
 $LogMessages +="---connected to $MS1"	
 }
 
@@ -1382,14 +1405,14 @@ catch{
 $LogMessages += "--- ERROR Unable to Connect to server $MS1 connecting to $MS2 "
 
 Try{	
-Import-Module OperationsManager
+
 New-SCOMManagementGroupConnection –ComputerName $MS2
 $LogMessages +="---connected to $MS2"		
 	}
 catch {
 $LogMessages += "--- ERROR Unable to Connect to server $MS2 connecting to $MS3 "		
 try{
-Import-Module OperationsManager
+
 New-SCOMManagementGroupConnection –ComputerName $MS3
 $LogMessages +="---connected to $MS3"
 		}
