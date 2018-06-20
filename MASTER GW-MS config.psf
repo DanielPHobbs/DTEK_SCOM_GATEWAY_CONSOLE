@@ -1314,8 +1314,8 @@ $buttonset4.enabled=$false
 $SHOWAGENTSFAILOVER.enabled=$false
 $buttonSET1.enabled=$false
 $SHOWAGENTSA.enabled=$false
-$DCAGWFailover.enabled=$false	
-$DCBGWFailover.enabled=$false
+$DC1GWFailover.enabled=$false	
+$DC2GWFailover.enabled=$false
 $buttonSELECT1.Enabled=$false
 $buttonSELECT2.Enabled=$false	
 $buttonSELECT3.Enabled=$false
@@ -1498,15 +1498,15 @@ $buttonSTARTGATEWAYSCAN_Click= {
 		$buttonCHECKAGENTFAILOVER.enabled = $true
 		$SHOWAGENTSFAILOVER.enabled = $true
 		$SHOWAGENTSA.enabled = $true
-		$DCAGWFailover.enabled = $true
-		$DCBGWFailover.enabled = $true
+		$DC1GWFailover.enabled = $true
+		$DC2GWFailover.enabled = $true
 		
 		$SHOWAGENTSB.BackColor = "lightblue"
 		$buttonCHECKAGENTFAILOVER.BackColor = "lightblue"
 		$SHOWAGENTSFAILOVER.BackColor = "lightblue"
 		$SHOWAGENTSA.BackColor = "lightblue"
-		$DCAGWFailover.BackColor = "lightblue"
-		$DCBGWFailover.BackColor = "lightblue"
+		$DC1GWFailover.BackColor = "lightblue"
+		$DC2GWFailover.BackColor = "lightblue"
 		
 		$progressbaroverlay1.Value = 100
 		
@@ -1523,29 +1523,29 @@ $buttonSTARTGATEWAYSCAN_Click= {
 
 $listbox2_SelectedIndexChanged={
 	$textbox2.Text = $listbox2.SelectedItem
-	$Global:GWDCaSELECT=$textbox2.Text
+	$Global:GWDC1SELECT=$textbox2.Text
 	$textbox2.backcolor="Lightgreen"
 }
 
 $listbox1_SelectedIndexChanged={
 	$textbox3.Text = $listbox1.SelectedItem
-	$Global:GWDCbSELECT=$textbox3.Text
+	$Global:GWDC2SELECT=$textbox3.Text
 	$textbox3.backcolor="Lightgreen"	
 }
 
-################### GTE DCA FAILOVER BUTTON #######################
-$DCAGWFailover_Click={
+################### GTE DC1 FAILOVER BUTTON #######################
+$DC1GWFailover_Click={
 	
 $progressbaroverlay1.visible = $false
 $LogMessages += " Getting Getaway failover Servers "
 	
 	
 
-if ($Global:GWDCaSELECT){
+if ($Global:GWDC1SELECT){
 $STATUS.backcolor="LightGreen"		
-$DCAGWFailover.backcolor = "red"
-$textbox8.Text = "Getting Failover MS for --  $Global:GWDCaSELECT"	+ $global:NewLine
-$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCaSELECT} 
+$DC1GWFailover.backcolor = "red"
+$textbox8.Text = "Getting Failover MS for --  $Global:GWDC1SELECT"	+ $global:NewLine
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDC1SELECT} 
 $GWA | foreach-object { 
 
 $Primary=$_.getPrimaryManagementServer() | select Name 
@@ -1573,30 +1573,30 @@ $textbox8.AppendText("Failover Server = $failover" + $global:NewLine)
 $textbox1.Text = $LogMessages
 $buttonSELECT1.Enabled=$true
 $buttonSELECT1.BackColor="lightblue"		
-$DCAGWFailover.backcolor = "LightGreen"	
+$DC1GWFailover.backcolor = "LightGreen"	
 	}
 
 else{	
 $textbox8.Text =	"ERROR NO GATEWAY SELECTED "				
 $textbox1.Text = $LogMessages
-$DCAGWFailover.backcolor = "LightGreen"
+$DC1GWFailover.backcolor = "LightGreen"
 	}	
 
 }
 
-################### GTE DCB FAILOVER BUTTON #######################
+################### GTE DC2 FAILOVER BUTTON #######################
 
-$DCBGWFailover_Click={
+$DC2GWFailover_Click={
 $progressbaroverlay1.visible = $false
 	
 $STATUS.backcolor="LightGreen"	
 $LogMessages += " Getting Getaway failover Servers"		
 	
-if ($Global:GWDCbSELECT){
+if ($Global:GWDC2SELECT){
 
-$DCBGWFailover.backcolor = "red"
-$textbox9.Text = "Getting Failover MS for --  $Global:GWDCbSELECT "	+ $global:NewLine
-$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCbSELECT} 
+$DC2GWFailover.backcolor = "red"
+$textbox9.Text = "Getting Failover MS for --  $Global:GWDC2SELECT "	+ $global:NewLine
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDC2SELECT} 
 $GWA | foreach-object { 
 
 $Primary=$_.getPrimaryManagementServer() | select Name 
@@ -1621,14 +1621,14 @@ $textbox9.appendText("Failover Server = $failover"	+ $global:NewLine)
 $buttonSELECT3.Enabled=$true
 $buttonSELECT3.BackColor="lightblue"
 $textbox1.Text = $LogMessages		
-$DCBGWFailover.backcolor = "LightGreen"	
+$DC2GWFailover.backcolor = "LightGreen"	
 				
 		
 	}
 	Else{	
 $textbox9.Text =	"ERROR NO GATEWAY SELECTED "				
 $textbox1.Text = $LogMessages
-$DCBGWFailover.backcolor = "LightGreen"
+$DC2GWFailover.backcolor = "LightGreen"
 	}
 		
 }
@@ -1714,7 +1714,7 @@ $buttonSELECT4_Click={
 $buttonSET1_Click={	
 $Global:SET1Click++
 $textbox8.ForeColor="LIME"
-$textbox8.Text = "YOU HAVE SELECTED PRIMARY and FAILOVER for $Global:GWDCaSELECT" + $Global:NewLine
+$textbox8.Text = "YOU HAVE SELECTED PRIMARY and FAILOVER for $Global:GWDC1SELECT" + $Global:NewLine
 $textbox8.AppendText("PRIMARY To $Global:PRIM1" + $Global:NewLine)
 $textbox8.AppendText("FAILOVER To $Global:FAIL1" + $Global:NewLine + $Global:NewLine) 
 
@@ -1725,7 +1725,7 @@ $textbox8.AppendText("PRESS SET AGAIN to COMMIT"  + $global:NewLine + $Global:Ne
 $textbox8.AppendText("-----------------------------------------------"  + $global:NewLine)
 	
 If ($Global:SET1Click -eq 2){
-$textbox8.AppendText("SETTING PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox8.AppendText("SETTING PRIMARY AND FAILOVER SERVERS for $Global:GWDC1SELECT"  + $global:NewLine + $Global:NewLine)	
 $textbox8.AppendText("-----------------------------------------------"  + $global:NewLine)	
 		
 #### SET PRIMARY and FAILOVER ####	
@@ -1734,22 +1734,22 @@ $textbox8.AppendText("-----------------------------------------------"  + $globa
 Try{
 $primaryMS = Get-SCOMManagementServer | where {$_.Name –eq $Global:PRIM1} 
 $failoverMS = Get-SCOMManagementServer | where {$_.Name –eq $Global:FAIL1} 
-$gatewayMS = Get-SCOMManagementServer | where {$_.Name –eq $Global:GWDCaSELECT} 
+$gatewayMS = Get-SCOMManagementServer | where {$_.Name –eq $Global:GWDC1SELECT} 
 Set-SCOMParentManagementServer -GatewayServer: $gatewayMS -PrimaryServer: $primaryMS 
 Set-SCOMParentManagementServer -GatewayServer: $gatewayMS -FailoverServer: $failoverMS		
 		}
 		Catch{###### INSERT CATCH CODE in Here ######}
 #>
 		
-$textbox8.AppendText("SET PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox8.AppendText("SET PRIMARY AND FAILOVER SERVERS for $Global:GWDC1SELECT"  + $global:NewLine + $Global:NewLine)	
 	
 $textbox8.AppendText("-----------------------------------------------"  + $global:NewLine + $global:NewLine)
 ### VERIFY PRIM and FAILOVER ####
-$textbox8.AppendText("VERIFYING PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)			
+$textbox8.AppendText("VERIFYING PRIMARY AND FAILOVER SERVERS for $Global:GWDC1SELECT"  + $global:NewLine + $Global:NewLine)			
 $textbox8.AppendText("-----------------------------------------------"  + $global:NewLine)	
 
 
-$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCaSELECT} 
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDC1SELECT} 
 $GWA | foreach-object { 
 $Primary=$_.getPrimaryManagementServer() | select Name 			
 $failover=$_.getFailoverManagementServers() | select Name	
@@ -1757,14 +1757,14 @@ $failover=$_.getFailoverManagementServers() | select Name
 ### check that these are correct ###
 If ( $Primary -eq $Global:PRIM1 -and $failover -eq $Global:FAIL1){
 			
-$textbox8.AppendText("SUCCESSFULLY VERIFIED PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox8.AppendText("SUCCESSFULLY VERIFIED PRIMARY AND FAILOVER SERVERS for $Global:GWDC1SELECT"  + $global:NewLine + $Global:NewLine)	
 
 $textbox8.AppendText("PRIMARY:---" + $Primary + $global:NewLine)
 $textbox8.AppendText("FAILOVER:---" + $failover+ $global:NewLine)				
 		}			
 else {
 $textbox8.ForeColor="RED"			
-$textbox8.AppendText("VERIFICATION FAILED FOR PRIMARY AND FAILOVER SERVERS for $Global:GWDCaSELECT"  + $global:NewLine + $Global:NewLine)
+$textbox8.AppendText("VERIFICATION FAILED FOR PRIMARY AND FAILOVER SERVERS for $Global:GWDC1SELECT"  + $global:NewLine + $Global:NewLine)
 
 $textbox8.AppendText("PRIMARY:---" + $Primary + $global:NewLine)
 $textbox8.AppendText("FAILOVER:---" + $failover+ $global:NewLine)				
@@ -1785,7 +1785,7 @@ $buttonSET3_Click={
 	
 $Global:SET3Click++
 $textbox9.ForeColor="LIME"
-$textbox9.Text = "YOU HAVE SELECTED PRIMARY and FAILOVER for $Global:GWDCbSELECT" + $Global:NewLine
+$textbox9.Text = "YOU HAVE SELECTED PRIMARY and FAILOVER for $Global:GWDC2SELECT" + $Global:NewLine
 $textbox9.AppendText("PRIMARY To $Global:PRIM2" + $Global:NewLine)
 $textbox9.AppendText("FAILOVER To $Global:FAIL2" + $Global:NewLine + $Global:NewLine) 
 
@@ -1794,7 +1794,7 @@ $textbox9.AppendText("PRESS SET AGAIN to COMMIT"  + $global:NewLine + $Global:Ne
 $textbox9.AppendText("-----------------------------------------------"  + $global:NewLine)
 	
 If ($Global:SET3Click -eq 2){
-$textbox9.AppendText("SETTING PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox9.AppendText("SETTING PRIMARY AND FAILOVER SERVERS for $Global:GWDC2SELECT"  + $global:NewLine + $Global:NewLine)	
 $textbox9.AppendText("-----------------------------------------------"  + $global:NewLine)	
 		
 #### SET PRIMARY and FAILOVER ####	
@@ -1803,22 +1803,22 @@ $textbox9.AppendText("-----------------------------------------------"  + $globa
 Try{
 $primaryMS1 = Get-SCOMManagementServer | where {$_.Name –eq $Global:PRIM2} 
 $failoverMS1 = Get-SCOMManagementServer | where {$_.Name –eq $Global:FAIL2} 
-$gatewayMS1 = Get-SCOMManagementServer | where {$_.Name –eq $Global:GWDCbSELECT} 
+$gatewayMS1 = Get-SCOMManagementServer | where {$_.Name –eq $Global:GWDC2SELECT} 
 Set-SCOMParentManagementServer -GatewayServer: $gatewayMS1 -PrimaryServer: $primaryMS1 
 Set-SCOMParentManagementServer -GatewayServer: $gatewayMS1 -FailoverServer: $failoverMS1		
 		}
 		Catch{###### INSERT CATCH CODE in Here ######}
 #>
 		
-$textbox9.AppendText("SET PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox9.AppendText("SET PRIMARY AND FAILOVER SERVERS for $Global:GWDC2SELECT"  + $global:NewLine + $Global:NewLine)	
 	
 $textbox9.AppendText("-----------------------------------------------"  + $global:NewLine + $global:NewLine)
 ### VERIFY PRIM and FAILOVER ####
-$textbox9.AppendText("VERIFYING PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)			
+$textbox9.AppendText("VERIFYING PRIMARY AND FAILOVER SERVERS for $Global:GWDC2SELECT"  + $global:NewLine + $Global:NewLine)			
 $textbox9.AppendText("-----------------------------------------------"  + $global:NewLine)	
 
 
-$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDCbSELECT} 
+$GWA=Get-SCOMGatewayManagementServer | where {$_.name -eq $Global:GWDC2SELECT} 
 $GWA | foreach-object { 
 $Primary1=$_.getPrimaryManagementServer() | select Name 			
 $failover1=$_.getFailoverManagementServers() | select Name	
@@ -1826,14 +1826,14 @@ $failover1=$_.getFailoverManagementServers() | select Name
 ### check that these are correct ###
 If ( $Primary1 -eq $Global:PRIM1 -and $failover -eq $Global:FAIL1){
 			
-$textbox9.AppendText("SUCCESSFULLY VERIFIED PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)	
+$textbox9.AppendText("SUCCESSFULLY VERIFIED PRIMARY AND FAILOVER SERVERS for $Global:GWDC2SELECT"  + $global:NewLine + $Global:NewLine)	
 
 $textbox9.AppendText("PRIMARY:---" + $Primary1 + $global:NewLine)
 $textbox9.AppendText("FAILOVER:---" + $failover1 + $global:NewLine)				
 		}			
 else {
 $textbox9.ForeColor="RED"			
-$textbox9.AppendText("VERIFICATION FAILED FOR PRIMARY AND FAILOVER SERVERS for $Global:GWDCbSELECT"  + $global:NewLine + $Global:NewLine)
+$textbox9.AppendText("VERIFICATION FAILED FOR PRIMARY AND FAILOVER SERVERS for $Global:GWDC2SELECT"  + $global:NewLine + $Global:NewLine)
 
 $textbox9.AppendText("PRIMARY:---" + $Primary1 + $global:NewLine)
 $textbox9.AppendText("FAILOVER:---" + $failover1 + $global:NewLine)				
@@ -1856,7 +1856,7 @@ $SHOWAGENTSA_Click={
 	$checkedlistbox5.Items.Clear()
 	$agents1=@()
 	$SHOWAGENTSA.BackColor="RED"
-	$agents1=(get-SCOMManagementServer -Name $GWDCaSELECT).GetAgentManagedComputers() | select name, computername
+	$agents1=(get-SCOMManagementServer -Name $GWDC1SELECT).GetAgentManagedComputers() | select name, computername
 	$textbox8.text="Agents On Selected Gateway" + $global:NewLine
 	
 	If ($agents1) {
@@ -1880,7 +1880,7 @@ $SHOWAGENTSB_Click={
 	$checkedlistbox6.Items.Clear()
 	$agents2=@()
 	$SHOWAGENTSB.BackColor="RED"
-	$agents2=(get-SCOMManagementServer -Name $GWDCBSELECT).GetAgentManagedComputers() | select name, computername
+	$agents2=(get-SCOMManagementServer -Name $GWDC2SELECT).GetAgentManagedComputers() | select name, computername
 	$textbox9.text="Agents On Selected Gateway" + $global:NewLine
 	
 	If ($agents2) {
